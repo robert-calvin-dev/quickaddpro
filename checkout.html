@@ -46,9 +46,15 @@
     })
     .then(res => res.json())
     .then(data => stripe.redirectToCheckout({ sessionId: data.id }))
-    .catch(err => alert('Error creating Stripe session'));
-  });
+    .catch(err => {
+      console.error(err);
+      alert('Error creating Stripe session');
+    });
+  })
+
+  
 </script>
 
 </body>
 </html>
+ 
