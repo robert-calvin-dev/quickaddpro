@@ -11,24 +11,7 @@
     <header><img src="assets/images/Quick%20Add.png" alt="Quick Add Logo"></header>
     <div class="tagline">Adding Products Has Never Been Faster. <br>SEO Has Never Been Easier. </div>
   <h1>Checkout – Quick Add Pro</h1>
-  <form action="https://your-payment-processor.com/charge" method="POST">
-    <label for="email">Your Email Address</label>
-    <input type="email" name="email" id="email" required placeholder="you@example.com">
 
-    <label for="license">Choose Your License</label>
-    <select name="license" id="license" required>
-      <option value="single">1 Site License – $39</option>
-      <option value="five">5 Site License – $99</option>
-      <option value="unlimited">Unlimited Sites License – $199</option>
-    </select>
-
-    <label for="card">Credit Card Info</label>
-    <input type="text" name="card" id="card" placeholder="This is just a placeholder. Integrate Stripe/PayPal here." disabled>
-
-    <button type="submit">Complete Purchase</button>
-
-    <p class="note">After payment, your Quick Add Pro plugin download will be automatically sent to the email you provided.</p>
-  </form>
   <script src="https://js.stripe.com/v3/"></script>
 
 <form id="checkout-form">
@@ -37,9 +20,9 @@
 
   <label for="license">Choose Your License</label>
   <select id="license" required>
-    <option value="price_1SITE_ID">1 Site License – $39</option>
-    <option value="price_5SITE_ID">5 Site License – $99</option>
-    <option value="price_UNLTD_ID">Unlimited Sites License – $199</option>
+    <option value="prod_SBmrlcLT9tQgJw">1 Site License – $39</option>
+    <option value="prod_SBmrrxEeht154M">5 Site License – $99</option>
+    <option value="prod_SBmsoxGg7dg1T3">Unlimited Sites License – $199</option>
   </select>
 
   <button type="submit">Complete Purchase</button>
@@ -48,14 +31,15 @@
 </form>
 
 <script>
-  const stripe = Stripe('pk_test_YOUR_PUBLIC_KEY'); // Replace with your Stripe public key
+  const stripe = Stripe('pk_live_51RHO2eFYT44QZb8DuCe5eXgthAU0X0qIS4CQqbtHfzVSmA7NMLhMtdcGh7sNNLfF8uuZi98LHtLDdnEDccul0a4M0084clvfjw'); // Replace with your Stripe public key
 
   document.getElementById('checkout-form').addEventListener('submit', function(e) {
     e.preventDefault();
     const priceId = document.getElementById('license').value;
     const email = document.getElementById('email').value;
 
-    fetch('/create-checkout-session.php', {
+    fetch('https://quickaddpro-api.onrender.com/create-checkout-session.php', {
+
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ priceId, email })
