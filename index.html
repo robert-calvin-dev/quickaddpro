@@ -186,6 +186,35 @@
             }
 
         }
+        .gif-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.gif-link {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.gif-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .gif-links-container {
+    flex-direction: column;
+  }
+}
         
     </style>
 </head>
@@ -224,10 +253,26 @@
     </section>
     <footer>
         <p style="font-size: 1rem;">quickaddpro@gmail.com</p>
-        <img src="assets/images/Quick Add (14).png" class="footerimg">
         <p style="font-size: 2rem;">&copy; 2025 Robert Calvin. All rights reserved.</p>
-        <p style="font-size: 1rem;">
-          <a href="https://robert-calvin-dev.github.io/portfolio/" target="_blank" style="text-decoration: underline; font-weight: bold;">
+        <section class="gif-links-container">
+            <a href="https://robert-calvin-dev.github.io/mysticclock/personlization.html" target="_blank">
+              <img src="assets/images/mysticclock.gif" alt="Mystic Clock" class="gif-link">
+            </a>
+            <a href="https://robert-calvin-dev.github.io/the-pour-choice/" target="_blank">
+              <img src="assets/images/pourchoice.gif" alt="The Pour Choice" class="gif-link">
+            </a>
+            <a href="https://robert-calvin-dev.github.io/portfolio/index.html" target="_blank">
+              <img src="assets/images/robertcmarketing.gif" alt="Quick Add Pro" class="gif-link">
+            </a>
+            <a href="https://glitterqueencreative.ca" target="_blank">
+              <img src="assets/images/gq.gif" alt="Glitter Queen" class="gif-link">
+            </a>
+            <a href="https://robert-calvin-dev.github.io/UncleJimboPad/djmixer.html" target="_blank">
+              <img src="assets/images/ujdjpad.gif" alt="Uncle Jimbo DJ Pad" class="gif-link">
+            </a>
+          </section>
+        <p style=" color:white; font-size: 1rem;">
+          <a style=" color:white;" href="https://robert-calvin-dev.github.io/portfolio/" target="_blank" style="text-decoration: underline; font-weight: bold;">
             📂 View My Full Portfolio
           </a>
         </p>
