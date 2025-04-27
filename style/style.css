@@ -390,4 +390,20 @@ li {
     .contact-email a {
         font-size: 1rem
     }
+
+    .version-cards {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
+    }
+    
+    .version-card {
+        margin: auto;
+    
+    }
+    
+    .version-card img {
+        width: 70%;
+    }
 }
