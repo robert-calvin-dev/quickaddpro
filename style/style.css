@@ -126,8 +126,11 @@ section {
 
 .version-card {
     margin: auto;
-    justify-content: space-around;
-    border-radius: 12px;
+
+}
+
+.version-card img {
+    height: 100%;
 }
 
 .feature-table table {
