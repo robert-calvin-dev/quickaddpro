@@ -1,286 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Add Pro | Bulk Upload WooCommerce Products Faster</title>
-<meta name="description" content="Quick Add Pro is the fastest WooCommerce plugin to bulk upload products, optimize SEO fields, and streamline your online store setup. Save hours of work.">
-<link rel="canonical" href="https://robert-calvin-dev.github.io/quickaddpro/">
-<link rel="icon" href="https://robert-calvin-dev.github.io/quickaddpro/assets/images/Quick%20Add%20(14).png" type="image/x-icon">
-
-<!-- Open Graph / Twitter Cards -->
-<meta property="og:title" content="Quick Add Pro | Bulk Upload WooCommerce Products Faster">
-<meta property="og:description" content="Bulk create WooCommerce products instantly with Quick Add Pro. Includes SEO, social meta, and schema optimization.">
-<meta property="og:image" content="https://robert-calvin-dev.github.io/quickaddpro/assets/images/Quick%20Add.png">
-<meta property="og:url" content="https://robert-calvin-dev.github.io/quickaddpro/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Quick Add Pro | Bulk Upload WooCommerce Products Faster">
-<meta name="twitter:description" content="Save time. Boost SEO. Launch faster. Quick Add Pro automates WooCommerce product creation.">
-<meta name="twitter:image" content="https://robert-calvin-dev.github.io/quickaddpro/assets/images/Quick%20Add.png">
-
-<!-- JSON-LD Structured Data (SoftwareApplication Schema) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Quick Add Pro",
-  "operatingSystem": "Web-based",
-  "applicationCategory": "BusinessApplication",
-  "description": "Quick Add Pro is the ultimate WooCommerce plugin for bulk uploading products, automating SEO meta, and accelerating online store launches.",
-  "url": "https://robert-calvin-dev.github.io/quickaddpro/",
-  "image": "https://robert-calvin-dev.github.io/quickaddpro/assets/images/Quick%20Add.png",
-  "author": {
-    "@type": "Person",
-    "name": "Robert Calvin"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Robert Calvin Web Development"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
-  }
-}
-</script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Open+Sans&display=swap"
-        rel="stylesheet">
-    <style>
-        html {
-            background-color: rgb(255, 255, 255);
-        }
-        body {
-            max-width: 1200px;
-            margin: auto;
-            font-family: 'Open Sans', sans-serif;
-            background: #8f8f8f;
-            color: #ffffff;
-            border: 4px solid black;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        header {
-            text-align: center;
-        }
-        header img {
-            max-width: 800px;
-        }
-        h1,
-        h2,
-        h3 {
-            font-family: 'Open Sans', sans-serif;
-        }
-        a {
-            color:black;
-            font-weight: bolder;
-        }
-        .tagline {
-            width: 100%;
-            background: #ff9100;
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #ffffff;
-            font-weight: 800;
-            border: 4px solid black;
-        }
-        video {
-            margin: 50px;
-            justify-self: center;
-            width: 90%;
-            border: 3px solid black;
-        }
-        footer {
-            padding-top:40px;
-            padding-bottom:40px;
-            width:100%;
-            display:flex;
-            flex-direction: column;
-         
-            background-color: rgb(73, 73, 73);
-            color: rgb(255, 255, 255);
-        }
-        footer img {
-            width: 50%;
-    
-        
-            align-self: center;
-            justify-self: center;
-        }
-        .where {
-            background: #ff6f00;
-            text-align: center;
-            font-size: 1.5rem;
-            border-top: 4px solid black;
-            border-bottom: 4px solid black;
-            padding-bottom: 80px;
-            margin-top: 40px;
-            width:100%;
-        }
-        .who {
-            background: #d2006c;
-            text-align: center;
-            font-size: 1.5rem;
-            border-top: 4px solid black;
-            border-bottom: 4px solid black;
-            padding-bottom: 80px;
-            margin-top: 40px;
-        }
-        .what {
-            background: #006eff;
-            text-align: center;
-            font-size: 1.5rem;
-            border-top: 4px solid black;
-            border-bottom: 4px solid black;
-            padding-bottom: 80px;
-        }
-        .how {
-            background: #b700ff;
-            text-align: center;
-            font-size: 1.5rem;
-            border-top: 4px solid black;
-            border-bottom: 4px solid black;
-            padding-bottom: 80px;
-            margin-bottom: 40px;
-        }
-        .why {
-            background: #ff0000;
-            text-align: center;
-            font-size: 1.5rem;
-            border-top: 4px solid black;
-            border-bottom: 4px solid black;
-            padding-bottom: 80px;
-        }
-        p {
-            width: 70%;
-            margin: auto;
-            text-align: center;
-        }
-        .width {
-            max-width: 70%;
-            height: auto;
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-        .plans {
-            width: 100%;
-        }
-        
-        @media only screen and (max-width: 661px) {
-            body{
-                max-width:100%;
-            }
-            header img {
-                width:80%;
-            }
-            .who, .what, .where, .why, .how, .tagline {
-                font-size: 1rem;
-
-            }
-
-        }
-        .gif-links-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem 1rem;
-}
-
-.gif-link {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-
-.gif-link:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Mobile adjustment */
-@media (max-width: 768px) {
-  .gif-links-container {
-    flex-direction: column;
-  }
-}
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Add Pro</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header><img src="assets/images/Quick%20Add.png" alt="Quick Add Logo"></header>
-    <div class="tagline">Adding Products Has Never Been Faster. <br>SEO Has Never Been Easier. </div><img
-        style="margin:auto; width: 100%;" src="assets/images/Untitled design.gif" class="race">
-    <section class="what">
-        <h2>What is Quick Add?</h2>
-        <p>Quick Add is your streamlined, no-bloat, lightning-fast way to create WooCommerce products—without opening
-            the full WordPress product editor.</p>
-    </section><video src="assets/videos/Quick Add Pro Demo.mov" controls></video>
-    <section class="how">
-        <h2>How does Quick Add work?</h2>
-        <p>It replaces WooCommerce's slow, multi-tab product creation with a single, AJAX-powered form that lets you:
-            Create simple, external, grouped, or variable products Upload images directly in the form Add attributes,
-            prices, SKUs, and variations Schedule sales Skip all the WooCommerce screen-hopping Submit everything
-            directly to the WooCommerce product table in seconds</p>
-    </section><a href="checkout.html"><img src="assets/images/quickaddversions.png" class="plans"></a>
-    <a href="downloads/Quick-Add.zip" download>
-      <p style=" color:white;">Download Free Version here</p>
-      <img src="assets/images/Quick Add.png" alt="Download File" style="width: 300px; height: auto;">
-    </a>
-    <section class="who">
-        <h2>Who is Quick Add for?</h2>
-        <p>Store owners who add products daily and want speed Freelancers setting up demo stores or client catalogs
-            Agencies launching stores that need quick prototyping Devs tired of clicking through WooCommerce 10x per
-            product</p>
-    </section><video src="assets/videos/QuickAddProPlusDemo.mov" controls></video>
-    <section class="why">
-        <h2>Why Choose Quick Add?</h2>
-        <p>While others drown you in settings and bloated menus, Quick Add does one thing better than anyone: create
-            WooCommerce products instantly—with built-in SEO that just works.</p>
-    </section><img src="assets/images/Quick%20Add%20(8).png" class="width">
-    <section class="where">
-        <h2>Where can I learn more about Quick Add?</h2>
-        <p>Like us on <a href="https://facebook.com/quickaddpro">Facebook</a></p><br>
-        <p>Follow us on <a href="https://instagram.com/quickaddpro">Instagram</a></p>
-    </section>
-    <footer>
-        <p style="font-size: 1rem;">quickaddpro@gmail.com</p>
-        <p style="font-size: 2rem;">&copy; 2025 Robert Calvin. All rights reserved.</p>
-        <section class="gif-links-container">
-            <a href="https://robert-calvin-dev.github.io/mysticclock/personlization.html" target="_blank">
-              <img src="assets/images/mysticclock.gif" alt="Mystic Clock" class="gif-link">
-            </a>
-            <a href="https://robert-calvin-dev.github.io/the-pour-choice/" target="_blank">
-              <img src="assets/images/pourchoice.gif" alt="The Pour Choice" class="gif-link">
-            </a>
-            <a href="https://robert-calvin-dev.github.io/portfolio/index.html" target="_blank">
-              <img src="assets/images/robertcmarketing.gif" alt="Quick Add Pro" class="gif-link">
-            </a>
-            <a href="https://glitterqueencreative.ca" target="_blank">
-              <img src="assets/images/gq.gif" alt="Glitter Queen" class="gif-link">
-            </a>
-            <a href="https://robert-calvin-dev.github.io/UncleJimboPad/djmixer.html" target="_blank">
-              <img src="assets/images/ujdjpad.gif" alt="Uncle Jimbo DJ Pad" class="gif-link">
-            </a>
-          </section>
-        <p style=" color:white; font-size: 1rem;">
-          <a style=" color:white;" href="https://robert-calvin-dev.github.io/portfolio/" target="_blank" style="text-decoration: underline; font-weight: bold;">
-            📂 View My Full Portfolio
-          </a>
-        </p>
-      </footer>
-</body>
+  <h1>Launch Faster. Rank Smarter.</h1>
+  <header class="main-header">
+    <!-- image: Launch Faster.png -->
+    
+    <img src="images/logo.png" alt="Quick Add Pro Logo">
+    <img class="gif" src="images/plug-in.gif" alt="Plugin Visual">
+  </header>
+  
+  <section class="cta-buttons">
+    
+    <!-- link: checkout.html -->
+    <a href="checkout.html" class="btn primary-btn">Buy Pro</a>
+    <!-- link: downloads/quick-add.zip -->
+    <a href="downloads/Quick-Add.zip" class="btn secondary-btn">Download Free Version</a>
+  </section>
+  <section class="star-rating">
+    ⭐⭐⭐⭐⭐
+  </section>
 
+
+
+
+
+  <section class="intro">
+  
+    <h2>What is Quick Add?</h2>
+    <p>Quick Add is your streamlined, no-bloat, lightning-fast way to create WooCommerce products—without opening the full WordPress product editor.</p>
+  </section>
+
+  <section class="media-screenshot">
+    <!-- image: images/screenshots.png -->
+    <img src="images/screenshots.png" alt="Screenshot of Quick Add">
+  </section>
+
+  <section class="how-it-works">
+    <h2>How does Quick Add work?</h2>
+    <p>It replaces WooCommerce’s slow, multi-tab product creation with a single, AJAX-powered form that lets you create simple, external, grouped, or variable products, upload images, set prices, schedule sales, and submit everything to your store instantly.</p>
+  </section>
+
+  <section class="media-demo">
+    <!-- video: videos/demo.mov -->
+    <video controls>
+      <source src="videos/demo.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  
+
+  <section class="who-for">
+    <h2>Who is Quick Add for?</h2>
+    <p>Store owners who add products daily and want speed.  
+    Freelancers setting up demo stores or client catalogs.  
+    Agencies launching stores that need quick prototyping.  
+    Devs tired of clicking through WooCommerce 10x per product.</p>
+  </section>
+
+  <section class="versions">
+    <div class="version-cards">
+      <div class="version-card">
+       
+        <a href="downloads/Quick-Add.zip"><img src="images/free.png" alt="Quick Add Free"></a>
+      </div>
+      <div class="version-card">
+        <!-- image: images/pro.png -->
+        <a href="checkout.html"><img src="images/pro.png" alt="Quick Add Pro"></a>
+      </div>
+      <div class="version-card">
+        <!-- image: images/pro-plus.png -->
+        <a href="checkout.html"><img src="images/pro-plus.png" alt="Quick Add Pro Plus"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose">
+    <h2>Why Choose Quick Add?</h2>
+    <p>While others drown you in bloated menus, Quick Add does one thing better than anyone: create WooCommerce products instantly — with built-in SEO that just works.</p>
+  </section>
+
+  <section class="feature-table">
+    <h2>Features Comparison</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Features</th>
+          <th>Quick Add FREE</th>
+          <th>Quick Add PRO</th>
+          <th>Quick Add PRO+</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Create Simple, External, Grouped, Variable Products</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Upload Product Images Inline</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Schedule Sales & Discounts</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Add Attributes with Variation Toggles</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>AJAX-Powered Saving</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Lightweight, No Setup Required</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Unlimited Usage on Any Site</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Focus Keyword Inputs</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>SEO Title + Meta Descriptions</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Open Graph Social Media Uploader</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Auto-injected Schema</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>SEO Meta Columns in WooCommerce</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Core SEO Sidebar in Product Pages</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Keyword Research Report</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Competitor Analysis Report</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Google Search Console Integration</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Broken Link Reports</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Canonical Link Report</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>robot.txt Editor</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Sitemap Generator</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Monthly SEO Audits</td><td>❌</td><td>❌</td><td>✅</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="main-footer">
+    <!-- image: images/plugin.gif -->
+   
+    <div class="social-icons">
+      <!-- link: facebook.com/quickaddpro -->
+      <a href="https://facebook.com/quickaddpro"><img src="images/facebook.png" alt="Facebook"></a>
+      <!-- link: instagram.com/quickaddpro -->
+      <a href="instagram.com/quickaddpro"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+
+    <div class="contact-email">
+      <img src="images/email.png">
+      <a href="mailto:quickaddpro@gmail.com">quickaddpro@gmail.com</a>
+    </div>
+
+    <div class="copyright">
+      © 2025 Robert Calvin. All rights reserved.
+    </div>
+  </footer>
+
+</body>
 </html>
