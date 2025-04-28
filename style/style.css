@@ -17,9 +17,15 @@
     );
   }
 
+  .above-header {
+    background: var(--gold-gradient);
+
+    border-bottom: 3px solid black;
+  }
+
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #07006e, #fff8d3);
+    background: linear-gradient(135deg, #2C003E 0%, #6B00B6 50%, #FFD700 100%);
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
@@ -50,8 +56,7 @@ h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: .5rem;
-    background: var(--gold-gradient);
-    border-bottom: 3px solid black;
+ 
 
     color: #ffffff;
 }
@@ -75,21 +80,21 @@ strong {
 }
 
 .primary-btn {
-    background-color: #110044;
-    color: #fff;
+    background: #FFD700;
+    color: #000000;
 }
 
 .primary-btn:hover {
-    background-color: #6c7cb9;
+    background-color: #ff9d00;
 }
 
 .secondary-btn {
-    background-color: #110044;
-    color: #fff;
+    background-color: #ff9d00;
+    color: #000000;
 }
 
 .secondary-btn:hover {
-    background-color: #6c7cb9;
+    background: #FFD700;
     
 }
 
@@ -203,12 +208,12 @@ section {
 }
 
 .main-footer {
-    background: #1c0043;
+    background: #000000;
     border-top: 3px solid black;
     padding: 2rem 1rem;
     text-align: center;
     margin-top: 4rem;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .main-footer img {
@@ -248,6 +253,55 @@ li {
     font-size: 1.1rem;
     color: #fff
 }
+
+.faq-question {
+    background: #2C003E;
+    color: #FFD700;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  
+/* Slick Carousel Dots Custom Styling */
+.slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .slick-dots li {
+    margin: 0 6px;
+  }
+  
+  .slick-dots button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .slick-dots li.slick-active button {
+    opacity: 1;
+    background-color: #00FFAA; /* or whatever highlight color you want */
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 15px;
+    background: #36004e;
+    color: #DDDDDD;
+  }
 
 .copyright {
     margin-top: 1rem;
@@ -351,6 +405,39 @@ li {
     margin-left: 1rem;
 }
 
+.features {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .feature-item {
+    margin-bottom: 20px;
+  }
+  .feature-item h3 {
+    font-size: 1.3rem;
+    color: #FFD700;
+  }
+  .feature-item p {
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+  }
+  .cta-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 30px;
+    background: #FFD700;
+    color: #2C003E;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .cta-button:hover {
+    background: #FF8C00;
+    color: #ffffff;
+  }
+
 .asked {
     font-size: 0.9rem;
     color: #ffffff;
@@ -375,7 +462,7 @@ li {
     background: #1c0043;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
     color: white;
 }
@@ -399,15 +486,22 @@ li {
 
 .testimonial p {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #fff;
 }
 
 .client-name {
     display: block;
     margin-top: 1rem;
     font-weight: bold;
-    font-size: 1rem;
-    color: var(--gold-gradient);
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
+
+  
 
 
   
