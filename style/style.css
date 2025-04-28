@@ -261,6 +261,10 @@ li {
     display: flex;
     justify-content: center;
   }
+  .pricing {
+    display:flex;
+    flex-direction:column
+  }
   
   .checkout-form {
     background: white;
@@ -312,6 +316,100 @@ li {
     margin-top: 1rem;
     text-align: center;
   }
+  .faq-section {
+    background-color: #6c7cb9;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #110044;
+}
+
+.faq-item {
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #110044;
+    margin-bottom: .5rem;
+    position: relative;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+
+.asked {
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: normal;
+    margin-left: 0.5rem;
+}
+.download-badge {
+    width: 300px;
+    background: #1c0043;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.testimonials-section {
+    background: #1c0043;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.testimonials-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    max-width: 800px;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    position: relative;
+    padding: 20px;
+    background: var(--gold-gradient);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.testimonial p {
+    margin-bottom: 1rem;
+}
+
+.client-name {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--gold-gradient);
+}
+
+
   
 
 @media (max-width:1024px) {
@@ -370,6 +468,14 @@ li {
 
     .btn {
         padding: .8rem 1.2rem
+    }
+
+    .price-img {
+        width:60%;
+    }
+
+    .quick-services {
+        width: 60%;
     }
 
     .contact-email {
