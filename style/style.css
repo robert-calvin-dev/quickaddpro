@@ -508,78 +508,51 @@ li {
 
 #testimonials {
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 60px auto;
-    padding: 50px 30px;
+    padding: 40px 20px;
     background: linear-gradient(135deg, #2c003e 0%, #4b0082 100%);
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    text-align: center;
-    position: relative;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     box-sizing: border-box;
   }
   
-  .testimonial-wrapper {
-    position: relative;
-    min-height: 220px; /* Guarantees proper FAQ flow */
+  .testimonial-card {
+    background: #fff;
+    color: #333;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    flex: 1 1 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
-  .testimonial {
-    opacity: 0;
-    transition: opacity 1s ease;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .testimonial.active {
-    opacity: 1;
-  }
-  
-  .testimonial p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+  .testimonial-card p {
+    font-size: 1rem;
     line-height: 1.6;
+    margin-bottom: 20px;
   }
   
-  .testimonial span {
-    display: block;
+  .testimonial-card span {
     font-weight: bold;
-    color: #ffd700;
-    margin-top: 10px;
+    color: #4b0082;
     font-size: 1rem;
   }
   
-  /* Responsive Adjustments */
+  /* Mobile Fix */
   @media (max-width: 768px) {
     #testimonials {
-      padding: 40px 20px;
-    }
-    .testimonial p {
-      font-size: 1rem;
-    }
-    .testimonial span {
-      font-size: 0.9rem;
+      flex-direction: column;
+      align-items: center;
     }
   }
-  
-  @media (max-width: 480px) {
-    #testimonials {
-      padding: 30px 15px;
-    }
-    .testimonial p {
-      font-size: 0.95rem;
-    }
-    .testimonial span {
-      font-size: 0.8rem;
-    }
-  }
-  
   
   
   
