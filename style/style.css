@@ -9,11 +9,11 @@
 :root {
     --gold-gradient: linear-gradient(
       135deg,
-      #e7c64b 0%,
-      #d4a134 25%,
-      #cc8b23 50%,
-      #d4a134 75%,
-      #e7c64b 100%
+      #00096b 0%,
+      #344cd4 25%,
+      #657bca 50%,
+      #37a8bf 75%,
+      #a8ff90 100%
     );
   }
   
@@ -54,7 +54,7 @@
   }
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(180deg, #2C003E 0%, #6B00B6 50%, #fde871 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 50%, #a7a7a7 100%);
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
@@ -68,7 +68,7 @@ body {
 }
 
 .main-header img {
-    width: 30%;
+    width: 70%;
     margin: auto;
     z-index: 1;
 }
@@ -76,7 +76,7 @@ body {
 .main-header .gif {
     width: 50%;
     z-index: 0;
-    margin-top: -100px;
+    margin-top: 0px;
 }
 
 h1 {
@@ -109,25 +109,26 @@ strong {
 }
 
 .primary-btn {
-    background: #FFD700;
+    background:  #77ff00;
     color: #000000;
 }
 
 .primary-btn:hover {
-    background-color: #ff9d00;
+    background-color: #31dadd;
 }
 
 .secondary-btn {
-    background-color: #ff9d00;
+    background-color: #ffe600;
     color: #000000;
 }
 
 .secondary-btn:hover {
-    background: #FFD700;
+    background: #00ffbf;
     
 }
 
 .star-rating {
+    margin-top: -30px;
     text-align: center;
     font-size: 3rem;
 }
@@ -146,8 +147,9 @@ section {
     animation: shimmer 10s linear infinite;
 }
 .how-it-works, .who-for {
-    background-color: #6c7cb9;
-    background-image: url("images/keyboardtile.png");
+    background: var(--gold-gradient);
+    background-size: 200% 200%;
+    animation: shimmer 10s linear infinite;
     
     border-top: 3px solid black;
     border-bottom: 3px solid black;
@@ -155,7 +157,9 @@ section {
 }
 
 .why-choose {
-    background-color: #6c7cb9;
+    background: var(--gold-gradient);
+    background-size: 200% 200%;
+    animation: shimmer 10s linear infinite;
     color: white;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
@@ -177,7 +181,7 @@ section {
 .price-img {
     width: 20%;
     margin: auto;
-    border: 3px solid black;
+   
 }
 
 .pro-plus-demo video,
@@ -336,6 +340,11 @@ li {
     color: #DDDDDD;
   }
 
+  .faq h2 {
+    color: black;
+    padding-bottom: 30px;
+  }
+
 .copyright {
     margin-top: 1rem;
     font-size: .9rem;
@@ -447,17 +456,18 @@ li {
   }
   .feature-item h3 {
     font-size: 1.3rem;
-    color: #FFD700;
+    color: #0073ff;
   }
   .feature-item p {
     font-size: 1rem;
+    color:black;
     margin: 5px 0 0 0;
   }
   .cta-button {
     display: inline-block;
     margin-top: 40px;
     padding: 15px 30px;
-    background: #FFD700;
+    background: #77ff00;
     color: #2C003E;
     font-weight: bold;
     font-size: 1.2rem;
@@ -467,8 +477,8 @@ li {
     transition: background 0.3s ease;
   }
   .cta-button:hover {
-    background: #FF8C00;
-    color: #ffffff;
+    background: #00fbff;
+    color: #000000;
   }
 
 .asked {
@@ -479,8 +489,8 @@ li {
 }
 .download-badge {
     width: 300px;
-    background: #1c0043;
-    color: #ffffff;
+    background: #70c6ff;
+    color: #000000;
     font-weight: 700;
     padding: 0.5rem 1rem;
     border: 2px solid black;
@@ -552,7 +562,7 @@ li {
       flex-direction: column;
       align-items: center;
     }
-  }
+  } 
   
   
   
