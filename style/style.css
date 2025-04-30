@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --gold-gradient: linear-gradient(
       135deg,
@@ -16,13 +15,59 @@
       #a8ff90 100%
     );
   }
+  .bundle-images {
+    padding: 40px 20px;
+    background: #ffffff;
+    text-align: center;
+  }
+  .bundle-image-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+   
+  }
+  .bundle-image-row a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+  }
+  .bundle-image-row a:hover {
+    transform: scale(1.05);
+  }
+  
+  .bundle-image-row img {
+    width: 300px;
+    max-width: 90%;
+   
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
   
   .above-header {
     background: var(--gold-gradient);
     background-size: 200% 200%;
     animation: shimmer 10s linear infinite;
     border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    h2, h3 {
+      color: white;
+      width: 50%;
+    };
+    video {
+      width: 60%;
+    };
   }
+
   
   /* Shimmer Animation */
   @keyframes shimmer {
@@ -54,8 +99,8 @@
   }
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(180deg, #ffffff 0%, #ffffff 50%, #a7a7a7 100%);
-    color: #ffffff;
+    background: white;
+
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -88,10 +133,6 @@ h1 {
  
 
     color: #ffffff;
-}
-
-strong {
-    color: darkblue;
 }
 
 .cta-buttons {
@@ -138,110 +179,8 @@ section {
     text-align: center;
 }
 
-.intro {
-    
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    background: var(--gold-gradient);
-    background-size: 200% 200%;
-    animation: shimmer 10s linear infinite;
-}
-.how-it-works, .who-for {
-    background: var(--gold-gradient);
-    background-size: 200% 200%;
-    animation: shimmer 10s linear infinite;
-    
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-
-}
-
-.why-choose {
-    background: var(--gold-gradient);
-    background-size: 200% 200%;
-    animation: shimmer 10s linear infinite;
-    color: white;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-}
-
-.intro p,
-.how-it-works p,
-.who-for p,
-.why-choose p {
-    font-size: larger;
-    max-width: 800px;
-    margin: 1rem auto;
-}
-
 .media-screenshot img {
     width: 30%;
-}
-
-.price-img {
-    width: 20%;
-    margin: auto;
-   
-}
-
-.pro-plus-demo video,
-.media-demo video {
-    width: 50%;
-    height: auto;
-    margin: 2rem auto;
-    display: block;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, .1);
-}
-
-.version-cards {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin: auto;
-}
-
-.version-card {
-    margin: auto;
-
-}
-
-.version-card img {
-    width: 90%;
-}
-
-.feature-table table {
-    width: 60%;
-    margin: 2rem auto;
-    border-collapse: collapse;
-    font-size: 1rem;
-    background: #1c0043;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 2px solid black;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, .1);
-}
-
-.feature-table th,
-.feature-table td {
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-}
-
-.feature-table thead {
-    background: var(--gold-gradient);
-    color: #fff;
-}
-
-.feature-table tr:nth-child(even) {
-    background: #0c496f;
-}
-
-.why-choose p {
-    max-width: 700px;
-    margin: 2rem auto;
-   
 }
 
 .main-footer {
@@ -253,35 +192,9 @@ section {
     color: rgb(255, 255, 255);
 }
 
-.main-footer img {
-    width: 120px;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 1rem 0;
-}
-
-li {
-    list-style: none;
-}
-
-.social-icons img {
-    width: 100px;
-    height: 100px;
-}
-
 .contact-email {
     display: flex;
     flex-direction: column;
-}
-
-.contact-email img {
-    margin: auto;
 }
 
 .contact-email a {
@@ -301,36 +214,6 @@ li {
     font-size: 1.2rem;
     cursor: pointer;
     margin-bottom: 5px;
-  }
-  
-/* Slick Carousel Dots Custom Styling */
-.slick-dots {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .slick-dots li {
-    margin: 0 6px;
-  }
-  
-  .slick-dots button {
-    font-size: 0;
-    width: 12px;
-    height: 12px;
-    background: #ffffff;
-    border: none;
-    border-radius: 50%;
-    opacity: 0.5;
-    transition: opacity 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .slick-dots li.slick-active button {
-    opacity: 1;
-    background-color: #00FFAA; /* or whatever highlight color you want */
   }
 
   .faq-answer {
@@ -447,132 +330,16 @@ li {
     margin-left: 1rem;
 }
 
-.features {
-    text-align: center;
-    margin-top: 30px;
-  }
-  .feature-item {
-    margin-bottom: 20px;
-  }
-  .feature-item h3 {
-    font-size: 1.3rem;
-    color: #0073ff;
-  }
-  .feature-item p {
-    font-size: 1rem;
-    color:black;
-    margin: 5px 0 0 0;
-  }
-  .cta-button {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 15px 30px;
-    background: #77ff00;
-    color: #2C003E;
-    font-weight: bold;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-  .cta-button:hover {
-    background: #00fbff;
-    color: #000000;
-  }
-
 .asked {
     font-size: 0.9rem;
     color: #ffffff;
     font-weight: normal;
     margin-left: 0.5rem;
 }
-.download-badge {
-    width: 300px;
-    background: #70c6ff;
-    color: #000000;
-    font-weight: 700;
-    padding: 0.5rem 1rem;
-    border: 2px solid black;
-    border-radius: 12px;
-    margin: auto;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-
-
 .instructions img {
     width: 50%;
 }
-
-.client-name {
-    display: block;
-    margin-top: 1rem;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #ffffff;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
-
-#testimonials {
-    width: 90%;
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #2c003e 0%, #4b0082 100%);
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.5);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    box-sizing: border-box;
-  }
   
-  .testimonial-card {
-    background: #fff;
-    color: #333;
-    border-radius: 15px;
-    padding: 30px 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    flex: 1 1 300px;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .testimonial-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  .testimonial-card span {
-    font-weight: bold;
-    color: #4b0082;
-    font-size: 1rem;
-  }
-  
-  /* Mobile Fix */
-  @media (max-width: 768px) {
-    #testimonials {
-      flex-direction: column;
-      align-items: center;
-    }
-  } 
-  
-  
-  
-  
-
-  
-
-
-  
-
 @media (max-width:1024px) {
     .cta-buttons {
         flex-direction: column;
@@ -588,18 +355,19 @@ li {
         width: 100%
     }
 
-    .version-cards {
-        flex-wrap: wrap
-    }
 
-    .media-screenshot img {
+
+    .above-header img {
         width: 50%
     }
 
-    .pro-plus-demo video,
-    .media-demo video {
-        width: 80%
+        .above-header {
+      h2, h3 {
+        width: 90%;
+        font-size: 1rem
+      }
     }
+
 
     h1 {
         font-size: 2rem
@@ -616,45 +384,6 @@ li {
     .main-header img {
         width: 70%
     }
-    #testimonials {
-        width: 90%;
-        max-width: 1200px;
-        margin: 60px auto;
-        padding: 40px 20px;
-        background: linear-gradient(135deg, #2c003e 0%, #4b0082 100%);
-        border-radius: 20px;
-        box-shadow: 0 0 30px rgba(0,0,0,0.5);
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        box-sizing: border-box;
-      }
-      
-      .testimonial-card {
-        background: #fff;
-        color: #333;
-        border-radius: 15px;
-        padding: 30px 20px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        flex: 1 1 300px;
-        max-width: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      
-      .testimonial-card p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 20px;
-      }
-      
-      .testimonial-card span {
-        font-weight: bold;
-        color: #4b0082;
-        font-size: 1rem;
-      }
 }
 
 @media (max-width:768px) {
@@ -667,78 +396,48 @@ li {
         width: 90%;
     }
 
-    .main-header .gif {
-        width: 100%
+    .above-header {
+      h2, h3 {
+        width: 90%;
+        font-size: 1rem
+      }
     }
 
-    .media-screenshot img {
+    .main-header img {
+      width: 100%;
+    }
+
+    .main-header .gif {
+        width: 100%;
+    }
+
+    .bundle-images-row {
+      display: flex;
+    }
+    .bundle-images img {
+      width: 100%;
+    }
+
+    .above-header img {
         width: 70%
     }
 
-    .version-card {
-        max-width: 90%
-    }
+
 
     .btn {
         padding: .8rem 1.2rem
     }
 
-    .price-img {
-        width:60%;
-    }
 
-    .quick-services {
-        width: 60%;
+
+    .quick-services img {
+        width: 40%;
     }
 
     .contact-email {
         align-items: center;
         text-align: center
     }
-
-    .social-icons img {
-        width: 60px;
-        height: 60px
-    }
-    #testimonials {
-        width: 90%;
-        max-width: 1200px;
-        margin: 60px auto;
-        padding: 40px 20px;
-        background: linear-gradient(135deg, #2c003e 0%, #4b0082 100%);
-        border-radius: 20px;
-        box-shadow: 0 0 30px rgba(0,0,0,0.5);
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        box-sizing: border-box;
-      }
-      
-      .testimonial-card {
-        background: #fff;
-        color: #333;
-        border-radius: 15px;
-        padding: 30px 20px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        flex: 1 1 300px;
-        max-width: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      
-      .testimonial-card p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 20px;
-      }
-      
-      .testimonial-card span {
-        font-weight: bold;
-        color: #4b0082;
-        font-size: 1rem;
-      }
 }
 
 @media (max-width:480px) {
@@ -759,9 +458,7 @@ li {
         padding: .6rem 1rem;
         font-size: .9rem
     }
-    .price-img {
-        width: 80%;
-    }
+ 
 
     .main-header img {
         width: 60%
@@ -776,80 +473,13 @@ li {
         font-size: 2rem
     }
 
-    .media-screenshot img,
-    .pro-plus-demo video,
-    .media-demo video {
-        width: 90%
-    }
-
-    .social-icons {
-        gap: 1rem
-    }
-
-    .social-icons img {
-        width: 50px;
-        height: 50px
-    }
 
     .contact-email a {
         font-size: 1rem
     }
 
-    .version-cards {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        margin: auto;
-    }
-    
-    .version-card {
-        margin: auto;
-    
     }
     .instructions img {
         width: 90%;
     }
     
-    .version-card img {
-        width: 70%;
-    }
-    #testimonials {
-        width: 90%;
-        max-width: 1200px;
-        margin: 60px auto;
-        padding: 40px 20px;
-        background: linear-gradient(135deg, #2c003e 0%, #4b0082 100%);
-        border-radius: 20px;
-        box-shadow: 0 0 30px rgba(0,0,0,0.5);
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        box-sizing: border-box;
-      }
-      
-      .testimonial-card {
-        background: #fff;
-        color: #333;
-        border-radius: 15px;
-        padding: 30px 20px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        flex: 1 1 300px;
-        max-width: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      
-      .testimonial-card p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 20px;
-      }
-      
-      .testimonial-card span {
-        font-weight: bold;
-        color: #4b0082;
-        font-size: 1rem;
-      }
-}
