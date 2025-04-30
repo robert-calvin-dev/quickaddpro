@@ -63,10 +63,14 @@
       color: white;
       width: 50%;
     };
-    video {
-      width: 60%;
-    };
+
   }
+
+
+  video {
+    width: 80%;
+    margin-bottom: 15px;
+  };
 
   
   /* Shimmer Animation */
@@ -113,7 +117,7 @@ body {
 }
 
 .main-header img {
-    width: 70%;
+    width: 30%;
     margin: auto;
     z-index: 1;
 }
@@ -121,16 +125,15 @@ body {
 .main-header .gif {
     width: 50%;
     z-index: 0;
-    margin-top: 0px;
+    margin-top: -20px;
 }
 
 h1 {
-    padding: 20px;
+    
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: .5rem;
- 
+
 
     color: #ffffff;
 }
@@ -175,7 +178,7 @@ h1 {
 }
 
 section {
-    padding: 20px;
+
     text-align: center;
 }
 
@@ -358,7 +361,8 @@ section {
 
 
     .above-header img {
-        width: 50%
+        width: 50%;
+        margin-bottom: 20px;
     }
 
         .above-header {
@@ -441,17 +445,19 @@ section {
 }
 
 @media (max-width:480px) {
-    body {
-        width: 100%
-    }
+
 
     table {
         width:100%;
     }
 
+    body {
+      width: 100%
+  }
+
     h1 {
         font-size: 1.6rem;
-        padding: 1rem
+     
     }
 
     .btn {
@@ -461,7 +467,7 @@ section {
  
 
     .main-header img {
-        width: 60%
+        width: 90%
     }
 
     .main-header .gif {
@@ -482,4 +488,6 @@ section {
     .instructions img {
         width: 90%;
     }
+
+
     

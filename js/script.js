@@ -23,7 +23,7 @@ function insertApps() {
  }
 
    section {
-     padding: 40px 20px;
+   padding-top: 40px;
      text-align: center;
    }
 
@@ -106,7 +106,8 @@ function insertApps() {
    table {
      width: 100%;
      max-width: 800px;
-     margin: 2rem auto;
+     margin: auto;
+     margin-bottom: 20px;
  
      font-size: 1rem;
      border: 2px solid #000;
@@ -123,7 +124,7 @@ function insertApps() {
      background: var(--gold-gradient);
    background-size: 200% 200%;
    animation: shimmer 10s linear infinite;
-   border-bottom: 3px solid black;
+  
    padding: 12px;
    
    }
@@ -134,7 +135,7 @@ function insertApps() {
    }
 
    tr:nth-child(even) {
-     background: #e0ffdf;
+     background:rgb(248, 237, 255);
    }
    tr:nth-child(odd) {
      background: #a9f6ff;
@@ -149,6 +150,21 @@ function insertApps() {
        text-align: center;
      }
    }
+
+   @media (max-width:480px) {
+
+    .feature-table {
+      width: 100%;
+    }
+
+    table {
+        width:100%;
+    }
+
+    .middle {
+    background: white;
+    }
+}
  </style>
  </head>
  <body class="apps">
@@ -489,6 +505,60 @@ function insertApps() {
  </table>
 </section>
 </section>
+
+ <section>
+    <h2>Quick WOO Pro</h2>
+    <h3>Bundle and save!!</h3>
+    <div class="product-wrapper">
+      <div class="product-image">
+        <img id="logo" src="images/logo.png" alt="Quick SEO Pro">
+      </div>
+      <div class="product-content">
+        <p>Quick SEO Pro injects perfectly formatted schema, title/meta, and social tags directly into your product editor. No fluff. Just better rankings, faster indexing, and properly structured product data from day one.</p>
+        <p>Unlock a full SEO suite: robots.txt editor, sitemap.xml generator, broken link scanner, redirect manager, and site-wide audits with score tracking. Your store deserves SEO that works.</p>
+        <div class="pricing-placeholder">$139.99 / year $219.99 / Lifetime</div>
+        <div class="cta-buttons">
+         
+          <a href="#" class="pro">Purchase PRO Version</a>
+        </div>
+      </div>
+    </div>
+   
+   
+   <section class="feature-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Included Plugins</th>
+          <th>Individual Price (Yearly)</th>
+          <th>Individual Price (Lifetime)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Quick Add Pro + Variation</td>
+          <td>$49.00 / year</td>
+          <td>$99.00 lifetime</td>
+        </tr>
+        <tr>
+          <td>Quick Edit Pro + Price</td>
+          <td>$49.99 / year</td>
+          <td>$99.00 lifetime</td>
+        </tr>
+        <tr>
+          <td>Quick SEO Pro</td>
+          <td>$79.99 / year</td>
+          <td>$139.99 lifetime</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #1c0043; color: #ffffff;">
+          <td>Total Cost if Purchased Separately</td>
+          <td>$178.98 / year</td>
+          <td>$337.99 lifetime</td>
+        </tr>
+      </tbody>
+    </table>
+   </section>
+   </section>
 </body>
 </html>
  `;
