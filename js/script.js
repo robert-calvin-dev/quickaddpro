@@ -181,7 +181,7 @@ function insertApps() {
      <p>Stop wasting hours clicking through attributes. Quick Variation Pro auto-generates variation combos, sets pricing and stock, and assigns images in one interface.</p>
      <div class="pricing-placeholder">$49.99 / year $99.99 / Lifetime </div>
      <div class="cta-buttons">
-       <a href="#" class="free">Download Free Version</a>
+       <a href="downloads/Quick-Add.zip" class="free">Download Free Version</a>
        <a href="#" class="pro">Purchase PRO Version</a>
      </div>
    </div>
@@ -285,7 +285,7 @@ function insertApps() {
      <p>Pair it with Quick Price Pro to bulk edit pricing, tax status, and sale schedules across your entire catalog in seconds.</p>
      <div class="pricing-placeholder">$49.99 / year $99.99 / Lifetime</div>
      <div class="cta-buttons">
-       <a href="#" class="free">Download Free Version</a>
+       <a href="downloads/Quick-Edit.zip" class="free">Download Free Version</a>
        <a href="#" class="pro">Purchase PRO Version</a>
      </div>
    </div>
@@ -384,7 +384,7 @@ function insertApps() {
      <p>Unlock a full SEO suite: robots.txt editor, sitemap.xml generator, broken link scanner, redirect manager, and site-wide audits with score tracking. Your store deserves SEO that works.</p>
      <div class="pricing-placeholder">$79.99 / year $139.99 / Lifetime</div>
      <div class="cta-buttons">
-       <a href="#" class="free">Download Free Version</a>
+       <a href="downloads/Quick-SEO.zip" class="free">Download Free Version</a>
        <a href="#" class="pro">Purchase PRO Version</a>
      </div>
    </div>
